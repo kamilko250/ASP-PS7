@@ -1,0 +1,22 @@
+﻿@page
+@model PS3.Pages.ZapisaneWSesji
+@{
+    ViewData["Title"] = "Zapisane w Sesji";
+}
+<div class="text-center">
+    <label>Zapisane w sesji: </label><br />
+    @if(Model.FizzBuzz != null){
+    <table class=" text-center">
+        <tr>
+            <th>Wynik</th>
+            <th>Numer</th>
+            <th>Data</th>
+        </tr>
+        <tr>
+            <td>@Model.FizzBuzz.Result</td>
+            <td>@Model.FizzBuzz.Number</td>
+            <td>@Model.FizzBuzz.DateTime</td>
+        </tr>
+    </table>
+    }
+</div>

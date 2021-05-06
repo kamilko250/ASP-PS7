@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP-PS7", "ASP-PS7\ASP-PS7.csproj", "{BD83986B-D698-466C-8A63-455146CC5913}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD83986B-D698-466C-8A63-455146CC5913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD83986B-D698-466C-8A63-455146CC5913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD83986B-D698-466C-8A63-455146CC5913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD83986B-D698-466C-8A63-455146CC5913}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58001E41-2C24-485D-B340-D6D83DC6CC35}
+	EndGlobalSection
+EndGlobal
