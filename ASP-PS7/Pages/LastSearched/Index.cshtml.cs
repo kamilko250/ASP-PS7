@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using ASP_PS7.Data;
 using PS3.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASP_PS7.Pages.LastSearched
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
         const int Count = 20;

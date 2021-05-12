@@ -9,7 +9,6 @@ namespace PS3.Models
 {
     public class FizzBuzz
     {
-
         [Key]
         public int ID { get; set; }
         [Display(Name = "Liczba od 1 do 1000")]
@@ -29,15 +28,11 @@ namespace PS3.Models
             string result = "";
             if (Number % 3 == 0)
                 result += "Fizz";
-
             if (Number % 5 == 0)
                 result += "Buzz";
-
             Result = result == string.Empty ? Number.ToString() : result;
             DateTime = DateTime.Now;
             UserName = userName;
         }
-
-
     }
 }

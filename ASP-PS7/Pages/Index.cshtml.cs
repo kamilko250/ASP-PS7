@@ -1,6 +1,7 @@
 ﻿using ASP_PS7.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -14,11 +15,18 @@ namespace ASP_PS7.Pages
 {
     public class IndexModel : PageModel
     {
+        [BindProperty]
+        public string viewData { get; set; }
         private readonly ILogger<IndexModel> _logger;
         private ApplicationDbContext _dbContext;
         [BindProperty]
         public FizzBuzz FizzBuzz { get; set; }
 
+        public override void OnPageHandlerSelected(PageHandlerSelectedContext pageContext)
+        {
+            viewData = pageContext.HttpContext.Connection.RemoteIpAddress.ToString();
+            
+        }
         public IndexModel(ILogger<IndexModel> logger, ApplicationDbContext dbContext)
         {
             _logger = logger;
