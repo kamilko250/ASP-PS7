@@ -22,10 +22,9 @@ namespace ASP_PS7.Pages
         [BindProperty]
         public FizzBuzz FizzBuzz { get; set; }
 
-        public override void OnPageHandlerSelected(PageHandlerSelectedContext pageContext)
+        public override async void OnPageHandlerSelected(PageHandlerSelectedContext pageContext)
         {
-            viewData = pageContext.HttpContext.Connection.RemoteIpAddress.ToString();
-            
+             viewData =  pageContext.HttpContext.Connection.RemoteIpAddress.ToString();
         }
         public IndexModel(ILogger<IndexModel> logger, ApplicationDbContext dbContext)
         {
